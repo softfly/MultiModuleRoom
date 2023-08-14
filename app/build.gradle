@@ -33,7 +33,7 @@ android {
     }
     dynamicFeatures = [':roommodule']
     buildFeatures {
-        compose true
+        // compose true
     }
     composeOptions {
         // https://developer.android.com/jetpack/androidx/releases/compose-kotlin
@@ -45,7 +45,7 @@ dependencies {
 
     // Room
     implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
+    ksp "androidx.room:room-compiler:$room_version"
 
     // Compose
     implementation "androidx.compose.ui:ui:$compose_version"
